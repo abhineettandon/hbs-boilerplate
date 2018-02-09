@@ -1,0 +1,31 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Market (USD)</h3>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Coin</th>
+                    <th>Minimum trade size</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each data}} {{#eq this.BaseCurrency "USDT"}}
+                <tr>
+                    <td>{{this.MarketName}}</td>
+                    <td>{{this.MinTradeSize}}&nbsp;{{this.MarketCurrency}}</td>
+                    <td>
+                        <a class="btn btn-primary" onclick="getMarketSummary('{{this.MarketName}}')" href='#'>Market summary</a>
+                    </td>
+                </tr>
+                {{/eq}} {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- market summary modal -->
+<div class="modal fade" id="modal-market-summary">
+    <div id="modal-data"></div>
+</div>

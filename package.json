@@ -1,0 +1,21 @@
+{
+  "name": "bittrex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ccxt": "^1.10.909",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "handlebars-helpers": "^0.10.0",
+    "mongoose": "^5.0.3",
+    "node-bittrex-api": "^0.8.2"
+  }
+}

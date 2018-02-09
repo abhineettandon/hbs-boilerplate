@@ -1,0 +1,57 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Market summary - {{data.MarketName}}</h4>
+        </div>
+        <div class="modal-body">
+            <table class="table table-bordered table-hover">
+                <tbody>
+                    <tr>
+                        <th>High</th>
+                        <td>{{data.High}}</td>
+                    </tr>
+                    <tr>
+                        <th>Low</th>
+                        <td>{{data.Low}}</td>
+                    </tr>
+                    <tr>
+                        <th>Volume</th>
+                        <td>{{data.Volume}}</td>
+                    </tr>
+                    <tr>
+                        <th>Last</th>
+                        <td>{{data.Last}}</td>
+                    </tr>
+                    <tr>
+                        <th>Base Volume</th>
+                        <td>{{data.BaseVolume}}</td>
+                    </tr>
+                    <tr>
+                        <th>Bid</th>
+                        <td>{{data.Bid}}</td>
+                    </tr>
+                    <tr>
+                        <th>Ask</th>
+                        <td>{{data.Ask}}</td>
+                    </tr>
+                    <tr>
+                        <th>Open Buy Orders</th>
+                        <td>{{data.OpenBuyOrders}}</td>
+                    </tr>
+                    <tr>
+                        <th>OpenSellOrders</th>
+                        <td>{{data.OpenSellOrders}}</td>
+                    </tr>
+                    <tr>
+                        <th>Previous Day</th>
+                        <td>{{data.PrevDay}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
